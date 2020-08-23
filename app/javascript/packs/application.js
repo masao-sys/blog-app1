@@ -25,7 +25,6 @@ import axios from 'axios'
 document.addEventListener('turbolinks:load', () => {
   const dataset = $('#article-show').data()
   const articleId = dataset.articleId
-  debugger
   axios.get(`/articles/${articleId}/like`)
     .then((response) => {
       console.log(response)
